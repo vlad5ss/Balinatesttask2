@@ -13,9 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
+// let loadingInfo = LoadingInformation.sharedInstance
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+         let loadingInfo = LoadingInformation.sharedInstance
         // Override point for customization after application launch.
+        loadingInfo.getInformation(completionHandler:{})
         return true
     }
 

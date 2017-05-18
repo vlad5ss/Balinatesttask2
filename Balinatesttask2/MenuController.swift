@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MenuController.swift
 //  Balinatesttask2
 //
 //  Created by mac on 5/17/17.
@@ -8,18 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class MenuController: UITableViewController {
+    
+    @IBOutlet weak var cafeLogo: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        cafeLogo.layer.cornerRadius = 60.0
+        cafeLogo.clipsToBounds = true
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
-
